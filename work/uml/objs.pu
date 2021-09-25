@@ -1,0 +1,79 @@
+@startuml objs
+
+class Line
+{
+    positions;
+    
+    put();
+    get();
+    toString();
+    toArray();
+}
+
+class Position 
+{
+    linable;
+
+    setLinable();
+}
+
+interface Linable
+{   
+    setPosition();
+    getPosition();
+    getValue();
+}
+
+enum Gourd 
+{
+    ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN;
+    r;
+    g;
+    b;
+    position;
+
+    getGourdByRank();
+    rank();
+    toString();
+    setPosition();
+    getPosition();
+    swapPosition();
+    getValue();
+}
+
+class Geezer 
+{
+    theGeezer;
+    sorter;
+
+    getTheGeezer();
+    setSorter();
+    lineUp();
+    parsePlan();
+    execute();
+}
+
+interface Sorter 
+{
+    load();
+    sort();
+    getPlan();
+}
+
+class BubbleSorter
+{
+    a;
+    plan;
+
+    swap();
+    sort();
+    getPlan();
+}
+
+BubbleSorter --|> Sorter
+Gourd        --|> Linable
+Position     --*  Line
+Linable      --*  Position
+Sorter       --*  Geezer
+
+@enduml

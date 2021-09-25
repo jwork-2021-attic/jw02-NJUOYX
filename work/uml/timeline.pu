@@ -1,0 +1,35 @@
+@startuml timeline
+entity line
+entity Gourd 
+entity theGeezer
+entity sorter
+entity log
+entity writer
+
+line        -> line     :create line
+
+Gourd       -> line     :put Gourd one at position 6
+Gourd       -> line     :put Gourd TWO at position 3
+Gourd       -> line     :put Gourd THREE at position 1
+Gourd       -> line     :put Gourd FOUR at position 5
+Gourd       -> line     :put Gourd FIVE at position 2
+Gourd       -> line     :put Gourd SIX at position 4
+Gourd       -> line     :put Gourd SEVEN at position 0
+
+theGeezer   -> theGeezer:get Geezer instance
+
+sorter      -> sorter   :create BubbleSorter
+
+sorter      -> theGeezer:set as theGeezer sorter
+
+line        -> theGeezer:line up
+
+theGeezer   -> log      :get sort log
+
+writer      -> writer   :create BufferedWriter
+
+log         -> writer   :write log to buffer
+
+write       -> write    :flush buffer
+
+@enduml
