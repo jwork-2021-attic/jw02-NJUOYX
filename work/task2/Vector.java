@@ -1,4 +1,7 @@
-package work;
+package work.task2;
+
+import work.basic.Container;
+import work.basic.Position;
 
 public class Vector implements Container {
     private Position[] positions;

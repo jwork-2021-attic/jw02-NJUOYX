@@ -1,7 +1,9 @@
-package work;
+package work.basic;
 
 public interface Sorter {
-    public void load(Container ps);
+    public String[] load(Container ps);
+
     public String[] sortStep();
+
     public Boolean finish();
 }
