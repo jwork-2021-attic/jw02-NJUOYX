@@ -30,6 +30,6 @@ public class Colorbk extends Position {
     public String print() {
         // return String.format("\033[48;2;%d;%d;%d;38;2;0;0;0m %03d \003[0m",
         // r,g,b,index);
-        return "\033[48;2;" + r + ";" + g + ";" + b + ";38;2;0;0;0m    " + String.format("%03d", index) + "  \033[0m";
+        return "\033[48;2;" + r + ";" + g + ";" + b + ";38;2;0;0;0m " + String.format("%03d", index) + " \033[0m";
     }
 }

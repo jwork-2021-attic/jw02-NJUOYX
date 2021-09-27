@@ -1,0 +1,78 @@
+@startuml task2
+
+interface Sorter{
+    load();
+    sortStep();
+    finish();
+}
+
+abstract Position{
+    less();
+    print();
+}
+
+class Colorbk{
+    r;
+    g;
+    b;
+    index;
+    ctb;
+
+    rank();
+    print();
+}
+
+interface Container{
+    put();
+    length();
+    indexOf();
+    getPositions();
+    swap(int aidx, int bidx);
+}
+
+class Controler{
+    monsters;
+    method;
+    log;
+
+    run();
+    getlog();
+}
+
+class Vector{
+    positions;
+
+    put();
+    length();
+    indexOf();
+    getPositions();
+    swap();
+}
+
+class BubbleSorter{
+    array;
+    dst;
+
+    load();
+    sortStep();
+    finish();
+}
+
+class MergeSorter{
+    array;
+    len;
+
+    load();
+    sortStep();
+    finish();
+}
+
+Container       --*   Controler
+Sorter          --*   Controler 
+Colorbk         --|>  Position
+Vector          --|>  Container
+Position        --*   Vector
+BubbleSorter    --|>  Sorter
+MergeSorter     --|>  Sorter
+
+@enduml
