@@ -2,10 +2,10 @@
 
 ## 任务一
 ### 类图:
-![](./uml/objs.pu)
+![](https://github.com/jwork-2021/jw02-NJUOYX/tree/master/work/uml/objs.pu)
 
 ### 时序图:
-![](./uml/timeline.pu)
+![](https://github.com/jwork-2021/jw02-NJUOYX/tree/master/work/uml/timeline.pu)
 
 ### example设计理念
 
@@ -36,13 +36,13 @@ main函数的控制流程是这样的：首先将```Gourd```类表示的色块�
 ## 任务二
 
 ### 类图
-![](./uml/task2.pu)
+![](https://github.com/jwork-2021/jw02-NJUOYX/tree/master/work/uml/task2.pu)
 ### 结果演示
 ![](https://asciinema.org/a/RQXuackROvAQFGHTLxFht8Gn2)
 
 ## 任务三
 
 ### 类图
-![](./uml/task3.pu)
+![](https://github.com/jwork-2021/jw02-NJUOYX/tree/master/work/uml/task3.pu)
 ### 结果演示
 ![](https://asciinema.org/a/5yBg4z8N4TriMCYoiM2ONFX0X)
